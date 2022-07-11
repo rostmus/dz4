@@ -7,3 +7,10 @@ if(obj.health >= 50) {
     return 'critical'
 }
 }
+
+export function sortPers(mass) {
+    let sortArr = mass.sort((a, b)=> {
+       return a.health - b.health
+      })
+      return sortArr.reverse()
+}
